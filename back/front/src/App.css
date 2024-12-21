@@ -1,0 +1,162 @@
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: white; /* Fondo blanco */
+  color: black; /* Cambia el color del texto para contraste */
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(174, 162, 162, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.app-logo {
+  width: 350px; /* Ajusta el tamaño del logo */
+  margin-bottom: 5px;
+
+  /* Centrado */
+  display: block; /* Convierte el logo en un bloque */
+  margin-left: auto; /* Márgenes automáticos para centrar */
+  margin-right: auto;
+    /* Reduce el espacio superior */
+  margin-top: -100px; /* Puedes ajustar este valor */
+}
+
+/* TÃ­tulo */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(0, 0, 0);
+}
+
+/* Estilo de formulario */
+form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input, select {
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  background-color: #e2e2e2;
+  border: 1px solid rgb(58, 10, 148);
+}
+
+button {
+  background-color:rgb(39, 9, 78);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: span 2;
+}
+
+button:hover {
+  background-color: #f06;
+}
+
+/* Estilos de los resultados */
+.result-container {
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.result-container h2 {
+  font-size: 2.5rem;
+  color:rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.result-container .result {
+  font-size: 4rem; /* TamaÃ±o mayor para el precio */
+  font-weight: bold;
+  color: #ffab00;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result-container .count {
+  font-size: 1.2rem;
+  color:rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+.precio-tasacion {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.result-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    grid-column: span 1;
+  }
+
+  .result-container h2 {
+    font-size: 2rem;
+  }
+
+  .result-container .result {
+    font-size: 3rem; /* Ajuste para pantallas pequeÃ±as */
+  }
+
+  .result-container .count {
+    font-size: 1rem;
+  }
+}
