@@ -1,5 +1,2 @@
 <<<<<<< HEAD
-[tu cambio local]
-=======
-[cambio remoto]
->>>>>>> origin/main
+[tu cambio local]R
