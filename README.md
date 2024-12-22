@@ -1,6 +1,5 @@
 <<<<<<< HEAD
-# tasa
-Tasador
+[tu cambio local]
 =======
-# tasar
->>>>>>> d1efc4f36c00035c5fdbe3ea3a403611616bf036
+[cambio remoto]
+>>>>>>> origin/main
